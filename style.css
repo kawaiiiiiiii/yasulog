@@ -1,0 +1,44 @@
+/* ヘッダー */
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    height: 10vh;
+    color: white;
+   
+}
+.header-left img{
+    /* width: 30%; */
+    margin-left: 40px;
+} 
+.header-left{
+    display: flex;
+    
+}
+
+.header-right ul{
+    display: flex;
+}
+.header-right li{
+    padding: 20px 40px;
+    
+}
+p{
+    padding-top:  20px;
+    text-align: center;
+}
+
+/* セクション kv*/
+.kv{
+    height: 50vh;
+    background-color: orange;
+    color: white;
+}
+h1{
+    font-size: 2em;
+    
+}
+h1::before{
+    content: "飲食LIFE 10年間";
+    font-size: 10px;
+}
