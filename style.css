@@ -23,22 +23,125 @@ header{
     padding: 20px 40px;
     
 }
-p{
-    padding-top:  20px;
-    text-align: center;
-}
+
 
 /* セクション kv*/
 .kv{
     height: 50vh;
     background-color: orange;
     color: white;
+    
+}
+.kv-container{
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
 }
 h1{
-    font-size: 2em;
-    
+    font-size: 2.5em;
+    margin: 0;
+    width: 30%;
 }
 h1::before{
     content: "飲食LIFE 10年間";
-    font-size: 10px;
+    font-size: 0.4em;
+    display: block;
+}
+.kv p{
+    margin-bottom: 0;
+}
+.app{
+    display: flex;
+}
+/* サーチ */
+
+.search{
+    width: 100%;
+    background-color: white;
+    border: 1px gainsboro solid;
+    /* box-shadow: 1px; */
+    margin: 0 auto;
+    position: relative;  
+}
+form{
+    background-color: white;
+    height: 10%;
+    position: absolute;
+    bottom: 22px;
+    left: 15%;
+}
+.search-box{
+    background-color: white;
+    padding: 20px;
+}
+label{
+    background-color: white;
+    margin: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+input{
+    border: none;
+    border: 1px solid gainsboro;
+    padding: 10px;
+
+}
+/* メイン */
+main{
+    width: 80%;
+    margin: 0 auto;
+
+}
+/* エリアからさがす */
+.area ,.genre{
+    
+    margin-top: 200px;
+    
+}
+.area-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.area-box{
+    border: 1px solid black;
+    height: 100px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.area-box:hover{
+    opacity: 0.7;
+
+}
+a{
+    display: flex;
+    align-items: center;
+    
+}
+img{
+    padding-right: 10px;
+}
+
+/* ジャンルから探す */
+.genre-container{
+    display: flex;
+}
+.genre-box{
+    position: relative;
+    width: 30%;
+}
+.genre-box p{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    color: white;
+}
+.genre-box img{
+    width: 100%;
 }
