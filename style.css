@@ -216,7 +216,7 @@ main {
     height: 80px;
     width: 30%;
     margin: 10px;
-    position: relative;
+    /* position: relative; */
 }
 
 .area-box:hover {
@@ -239,7 +239,7 @@ main {
     transition: all 0.2s; */
 /* } */
 .area-box img {
-    padding-right: 10px;
+    padding-right: px;
     height: 80px;
     border-radius: 5px;
 }
@@ -251,7 +251,7 @@ main {
 .area-box div {
     align-self: center;
     margin-left: 50px;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -321,6 +321,7 @@ dt {
 @keyframes genre-name {
     0% {
         transform: translateY(0px);
+        /* 1ものを移動させるやつ↑ */
     }
 
     100% {
@@ -422,7 +423,7 @@ dt {
     border-radius: 5px;
     padding: 10px 20px;
     width: 80%;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
     text-align: center;
 
@@ -488,7 +489,7 @@ dt {
 
     /* メイン右 */
     .main-rigth {
-        width: 100%;
+        width: 80%;
         margin: 100px auto;
         font-size: 0.7em;
     }
@@ -507,7 +508,7 @@ dt {
     }
 
     #login {
-        display: none;
+        /* display: none; */
         /*要素を非表示にしてきゅっと詰める*/
     }
     .pr{ 
