@@ -19,9 +19,10 @@
         </div>
         <nav class="header-right">
             <ul>
-                <li class="tpoint"><a href=""><img src="https://placehold.jp/30x30.png" alt="">所有Tポイント</a></li>
-                <li><a href="">何かと</a></li>
-                <li><a href="">なにか</a></li>
+                <li class="tpoint"><a href="Tポイント"><img src="./img/tpoint.png" alt="">所有Tポイント</a></li>
+                <li><a href="#area">エリアから探す</a></li>
+                <li><a href="#genre">ジャンルから探す</a></li>
+                <li><a href="#login">ログイン</a></li>
 
             </ul>
 
@@ -48,12 +49,10 @@
         <section class="search">
             <form action>
                 <div class="search-box">
-                    <label for="search">日時・人数</label><input type="search" name="" placeholder="エリア">
+                    <label for="search">日時・人数から探す</label><input type="search" name="" placeholder="エリア">
                     <input type="search" name="" placeholder="キーワード">
                     <input name="date" type="date">
                     <input type="time" name="" min="18:00" max="21:00">
-                    <select name="list" id="">
-                        <option value="item">アイテム1</option>
                     </select>
 
             </form>
@@ -63,30 +62,30 @@
             <!-- エリアから探す -->
             <main class="main-left">
                 <section class="area">
-                    <h2>エリアから探す</h2>
+                    <h2 id="area">エリアから探す</h2>
                     <div class="area-container">
                         <div class="area-box">
-                            <a href=""><img src="./img/toyosuta.jpg" alt="">TOYOTA</a>
+                            <a href=""><img src="./img/toyosuta.jpg" alt=""><div>TOYOTA <span>2件</span></div> </a>
 
                         </div>
                         <div class="area-box">
-                            <a href=""><img src="./img/okazaki.jpg" alt="">OKAZAKI</a>
+                            <a href=""><img src="./img/okazaki.jpg" alt=""><div>OKAZAKI<span>1件</span></div> </a>
 
                         </div>
                         <div class="area-box">
-                            <a href=""><img src="./img/kariya.jpg" alt="">KARIYA</a>
+                            <a href=""><img src="./img/kariya.jpg" alt=""> <div>KARIYA<span>1件</span></div> </a>
 
                         </div>
                         <div class="area-box">
-                            <a href=""><img src="" alt="">NAGOYA</a>
+                            <a href=""><img src="./img/nagoya.jpg" alt=""><div>NAGOYA<span>2件</span></div> </a>
 
                         </div>
                         <div class="area-box">
-                            <a href=""><img src="./img/takahama.jpg" alt="">TAKAHAMA</a>
+                            <a href=""><img src="./img/takahama.jpg" alt=""><div>TAKAHAMA<span>1件</span></div> </a>
 
                         </div>
                         <div class="area-box">
-                            <a href=""><img src="./img/korea.jpg" alt="">KOREA</a>
+                            <a href=""><img src="./img/korea.jpg" alt=""><div>KOREA<span>1件</span></div> </a>
                             <!-- <span>okazaki</span> -->
                         </div>
                     </div>
@@ -169,31 +168,31 @@
                 </section>
                 <!-- ジャンルから探す -->
                 <section class="genre">
-                    <h2>ジャンルから探す</h2>
+                    <h2 id="genre">ジャンルから探す</h2>
                     <div class="genre-container">
                         <div class="genre-box">
-                            <img src="./img/yakinikuuuuuuuu.jpg" alt="">
-                            <p>cafe</p>
+                            <img src="./img/izakaya.jpg" alt="">
+                            <p>居酒屋</p>
                         </div>
                         <div class="genre-box">
-                            <img src="./yakinikuuuuuuuu.jpg" alt="">
-                            <p>cafe</p>
+                            <img src="./img/oniku.jpg" alt="">
+                            <p>お肉</p>
                         </div>
                         <div class="genre-box">
-                            <img src="./yakinikuuuuuuuu.jpg" alt="">
-                            <p>cafe</p>
+                            <img src="./img/kankoku.jpg" alt="">
+                            <p>韓国料理</p>
                         </div>
                         <div class="genre-box">
-                            <img src="./yakinikuuuuuuuu.jpg" alt="">
-                            <p>cafe</p>
+                            <img src="./img/yakitori.jpg" alt="">
+                            <p>やきとり</p>
                         </div>
                         <div class="genre-box">
-                            <img src="./yakinikuuuuuuuu.jpg" alt="">
-                            <p>cafe</p>
+                            <img src="./img/pasta.jpg" alt="">
+                            <p>パスタ</p>
                         </div>
                         <div class="genre-box">
-                            <img src="./yakinikuuuuuuuu.jpg" alt="">
-                            <p>cafe</p>
+                            <img src="./img/cafe.jpg" alt="">
+                            <p>カフェ</p>
                         </div>
                     </div>
                     <!-- ジャンルから探すいっち -->
@@ -216,25 +215,31 @@
             <!-- メインみぎ -->
             <main class="main-rigth">
                 <section class="number">
-                    <div number-box>
-                        <span class="count">85</span>
-                        <span class="digit">万</span> <!--digit→桁*-->
+                    <div class="number-box">
+                        <span>
+                            <span class="count">85</span>
+                            <span class="digit">万</span> <!--digit→桁*-->
+                        </span>
                         <p class="unit">店舗</p>
                     </div>
-                    <div number-box>
-                        <span class="count">4980</span>
-                        <span class="digit">万</span> <!--digit→桁*-->
+                    <div class="number-box">
+                        <span>
+                            <span class="count">4980</span>
+                            <span class="digit">万</span> <!--digit→桁*-->
+                        </span>
                         <p class="unit">口コミ</p>
                     </div>
-                    <div number-box>
-                        <span class="count">12,608</span>
-                        <span class="digit">万</span> <!--digit→桁*-->
+                    <div class="number-box">
+                        <span>
+                            <span class="count">12,608</span>
+                            <span class="digit">万</span> <!--digit→桁*-->
+                        </span>
                         <p class="unit">写真</p>
                     </div>
 
                 </section>
                 <!-- ログイン -->
-                <section class="login">
+                <section id="login">
                     <p class="login-title">やすはへログイン</p>
                     <p>ログインするとやすはの歴代の推しが見れたり、推しに生かされているやすはを知ることができます。</p>
                     <a href="./kawaiyasuha_profile/" class="btn">やすはへログイン</a>
@@ -243,15 +248,18 @@
                 <!-- おしらせ -->
                 <section class="notice">
                     <p>やすログからのお知らせ</p>
-                    <span>2022.12.25</span>
-                    <a href=""><img src="" alt="">あああああ</a>
-                     
+                    <span>2022.12.25</span><br>
+                    <a href="https://tabelog.com/okinawa/A4703/A470304/47003583/">クリスマスに食べたケーキがとってもおいしかったです。</a>
+
                 </section>
 
                 <!-- PR -->
                 <section class="pr">
                     <p>[PR]今月のおし</p>
-                    <iframe width="auto" height="100%" src="https://www.youtube.com/embed/8tNka5jvyU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="auto" height="100%" src="https://www.youtube.com/embed/8tNka5jvyU8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </section>
 
             </main>
